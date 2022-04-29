@@ -1,0 +1,322 @@
+body {
+    --nav-height: 50px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+}
+
+.nav {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: var(--nav-height);
+    background: #222222;
+    overflow-x: hidden;
+}
+
+.nav__link {
+    border: 1px solid #222222;
+    margin: 5px;
+    padding: 5px;
+    width: 140px;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #eeeeee;
+    font-weight: bold;
+    text-align: center;
+}
+
+.nav__link__selected {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.nav__link:hover {
+    /*background: rgba(255, 255, 255, 0.3);*/
+    border: 1px solid white;
+}
+
+#nav-active-project {
+    border: 1px solid #222222;
+    margin: 5px;
+    padding: 5px;
+    width: 140px;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    /*color: #eeeeee;*/
+    text-align: center;
+    color: lightblue;
+    /*color: cornflowerblue;*/
+}
+
+body {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+#app {
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+a {
+    color: lightblue;
+    /*color: cornflowerblue;*/
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-decoration-line: none;
+    font-weight: bold;
+}
+
+.projectDiv {
+    border: 1px solid lightgray;
+    padding: 10px;
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.activeProjectDiv {
+    border: 1px solid #222222;
+    padding: 10px;
+    margin: 20px;
+    background-color: #222222;
+}
+
+.projectDiv a:hover {
+    outline: 1px solid black;
+}
+
+.activeProjectDiv a:hover {
+    outline: 1px solid white;
+}
+
+.projectsProjectLink {
+    padding: 10px;
+    margin: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    /*text-decoration-line: underline;*/
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.projectsProjectSublink {
+    font-size: 16px;
+    padding: 5px;
+    margin: 5px;
+    font-weight: normal;
+}
+
+.sampleDiv {
+    margin: 10px;
+    box-sizing: border-box;
+    border: 1px solid lightgrey;
+    position: relative;
+    display: block;
+}
+
+.samplePlay {
+    font-size: 12px;
+    text-align: center;
+
+    box-sizing: border-box;
+    width: 20px;
+    height: 16px;
+    background: lightblue;
+    /*background: cornflowerblue;*/
+    position: absolute;
+    left: 200px;
+    top: 2px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.sampleCanvas {
+    border: 1px solid black;
+    top: 40px;
+    box-sizing: border-box;
+}
+
+.progressionsProgressionDiv {
+    position: relative;
+    /*display: inline-block;*/
+    /*display: block;*/
+    box-sizing: border-box;
+    border: 1px solid lightgrey;
+    padding: 0;
+    margin: 0;
+}
+
+.compositionsCompositionDiv {
+    position: relative;
+    /*padding: 0;*/
+    /*margin: 0;*/
+    top: 20px;
+}
+.compositionsProgressionDiv {
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+.progressionsProgressionNameLabelDiv {
+    padding: 2px;
+    margin: 2px;
+    font-weight: bold;
+    color: lightblue;
+    /*color: cornflowerblue;*/
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.progressionsProgressionPlayDiv {
+    font-size: 12px;
+    text-align: center;
+
+    box-sizing: border-box;
+    width: 20px;
+    height: 16px;
+    background: lightblue;
+    /*background: cornflowerblue;*/
+    position: absolute;
+    left: 200px;
+    top: 2px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.progressionsSampleDiv {
+    position: relative;
+    display: block;
+    padding: 2px;
+    overflow: hidden;
+}
+
+.progressionsSampleNameLabelDiv {
+    position: absolute;
+    padding: 2px;
+    margin: 2px;
+    top: 0;
+    height: 20px;
+    width: 160px;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.progressionsSampleTimingDiv {
+    position: relative;
+    top: 0;
+    left: 200px;
+    display: block;
+    padding: 2px;
+}
+
+.progressionsSampleTimeDiv {
+    position: absolute;
+    /*display: inline-block;*/
+    padding: 5px;
+    font-size: 12px;
+    /*font-weight: bold;*/
+    font-weight: normal;
+    border: 1px dotted black;
+    background-color: lightblue;
+    /*background-color: cornflowerblue;*/
+    text-align: left;
+}
+
+.compositionsProgressionDivPulseOut {
+    animation: pulseOut 500ms infinite;
+    animation-iteration-count: 1
+}
+
+@keyframes pulseOut {
+    100% {
+        opacity: 20%;
+    }
+}
+
+.compositionsProgressionDivPulseIn {
+    animation: pulseIn 500ms normal;
+    animation-iteration-count: 1
+}
+
+@keyframes pulseIn {
+    0% {
+        background-color: lightblue;
+    }
+    50% {
+        background-color: #FFFFFF;
+    }
+}
+
+.compositionsFollowDiv {
+    height: 40px;
+    width: 100%
+}
+
+.compositionsFollowedDiv {
+    font-size: 10px;
+    font-weight: normal;
+    position: absolute;
+    height: 40px;
+    width: 100px;
+    text-align:center;
+    top: 30px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid lightgray;
+}
+
+.compositionsFollowerDiv {
+    display: none;
+    position: absolute;
+    height: 40px;
+    width: 100px;
+    top: 30px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+}
+
+.compositionsDownloadLinkDiv {
+    left: 250px;
+    top: 2px;
+    position: absolute;
+    font-size: 12px;
+    text-align: center;
+
+    box-sizing: border-box;
+    width: 20px;
+    height: 16px;
+    background: lightblue;
+    border: 1px solid black;
+    cursor: pointer;
+    transform: scaleY(-1);
+}
+
+.compositionsDownloadLoaderDiv {
+    left: 250px;
+    top: 2px;
+    position: absolute;
+    border: 4px solid lightgrey;
+    border-radius: 50%;
+    border-top: 4px solid lightblue;
+    width: 8px;
+    height: 8px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.vLine {
+    position: absolute;
+    height: 100%;
+    width: 0;
+    border: 1px solid maroon;
+    top: 0;
+    left: 0;
+}
